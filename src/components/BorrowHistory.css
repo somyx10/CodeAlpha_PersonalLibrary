@@ -1,0 +1,43 @@
+/* src/components/BorrowHistory.css */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; /* Center the container */
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+  text-align: center; /* Center the text */
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 1em;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 40px;
+  margin-right: 90px;
+  margin-left: 130px;
+}
+
+thead {
+  background-color: #f4f4f4;
+}
+
+th, td {
+  padding: 0.8em;
+  text-align: center;
+  border: 1px solid #863582;
+}
+
+th {
+  
+  font-weight: bold;
+}
+
+tbody tr:hover {
+  background-color: #cda3db;
+}

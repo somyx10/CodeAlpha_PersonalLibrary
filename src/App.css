@@ -1,38 +1,161 @@
-.App {
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f4f8;
+  padding-top: 100px;
+}
+
+/* Header styles */
+nav {
+  background-color: #1f2937;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3em 0.8em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-right: 2em;
+}
+
+nav ul li a {
+  color: #e5e7eb;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #5176c6;
+}
+
+/* Main content styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #111827;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form {
+  background-color: #f9fafb;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type="text"], input[type="date"], select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-size: 1em;
+  color: #111827;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #4b5563;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #2354be;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background-color: #3c75f0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #1f2937;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+/* Book List styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+li {
+  color: #374151;
+  padding: 10px 0;
+  font-size: 1.2em;
+  text-align: left;
+  margin-left: 20px;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+/* Borrow History styles */
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 40px;
+  text-align: center;
+}
+
+thead {
+  background-color: #5176c6;
+  color: #ffffff;
+}
+
+th, td {
+  padding: 14px;
+  border: 1px solid #d1d5db;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+tbody tr:hover {
+  background-color: #e0f2fe;
 }

@@ -1,0 +1,38 @@
+/* src/components/BookList.css */
+
+.container {
+  max-width: 100px;
+  margin: 0 auto; 
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 90px;
+  text-align: center; 
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 1em;
+}
+
+.line{
+  border-bottom: 0.1em solid rgb(11, 17, 92);
+  width: 70%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 60px;
+}
+
+li {
+  color: black;
+  padding: 0.5em 0;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  border-bottom: none;
+}

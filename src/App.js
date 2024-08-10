@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import BookList from './components/BookList';
+import AddBook from './components/AddBook';
+import BorrowBook from './components/BorrowBook';
+import BorrowingHistory from './components/BorrowingHistory';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route exact path="/" element={<BookList />} />
+        <Route path="/add-book" element={<AddBook />} />
+        <Route path="/borrow-book" element={<BorrowBook />} />
+        <Route path="/borrow-history" element={<BorrowingHistory />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
+
